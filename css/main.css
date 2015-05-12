@@ -347,14 +347,16 @@ a:visited {
 .email,
 .email:hover,
 .email:visited,
+.email:active,
 .github,
 .github:hover,
 .github:visited,
+.github:active,
 .facebook,
 .facebook:hover,
-.facebook:visited {
+.facebook:visited,
+.facebook:active {
   color: #FFF;
-  text-decoration: none;
 }
 
 .contact__greeting {
