@@ -4,9 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width" initial-scale="1.0">
   <title>Portfolio</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/pageindicators.js"></script>
 </head>
 
@@ -30,43 +32,44 @@
   </div>
 </a>
 
-  <a name="about">
+
     <div class="row about">
       <div class="col12 page__content">
+        <a name="about">
         <h3 class="about__title">about</h3>
+        </a>
         <p class="about__text">
-          Udayan is a Carbon-based, aspiring front-end web developer, who dabbles in standup and writing. You may have heard of a little novel called "The Stranger." Well he didn't write that, Camus did. But it's still pretty good.
+          Udayan is a Carbon-based, aspiring front-end web developer, who dabbles in standup and writing. You may have heard of a little novel called "The Stranger." Well he didn't write that, Camus did. But it's great and he's read it if that counts for something.
         </p>
         <p class="about__text">
-          He (Udayan, not Camus) has a degree in Biology, which he has yet to use in any capacity other than appreciation. And a webcomic <a class="webcomic__link" href="http://www.allthingsalike.com">here</a> that he updates whenever he remembers he's still paying for the hosting.
+          He (Udayan, not Camus) has a degree in Biology, which he has yet to use in any capacity other than pure appreciation. And a webcomic <a class="webcomic__link" href="http://www.allthingsalike.com">here</a> that he updates whenever he remembers he's still paying for the hosting.
         </p>
         <p class="about__text">
         Udayan is currently enrolled in life and loves to learn.
         </p>
         <p class="about__text">
-        Look on his work, ye Mighty, and despair. Or, just kind of go "heh, nice."
+        Look on his works, ye Mighty, and despair. Or, just kind of go "heh, nice."
         </p>
       </div>
     </div>
-  </a>
 
   <a name="work">
     <div class="row work">
       <div class="col12 page__content">
-        <h3 class="work__title">work (under work)</h3>
+        <h3 class="work__title">work (pending)</h3>
       </div>
       <div class="col12 work__gallery">
         <div class="project">
-        <img class="work__image" src="http://placehold.it/400x300">
-        <h4>Project 1</h4>
+        <img class="work__image" src="http://placehold.it/400x300" alt="Project 1 Image" data-toggle="modal" data-target="#Project1">
+        <h4>Project one</h4>
       </div>
       <div class="project">
-        <img class="work__image" src="http://placehold.it/400x300">
-        <h4>Project 2</h4>
+        <img class="work__image" src="http://placehold.it/400x300" alt="Project 2 Image" data-toggle="modal" data-target="#Project2">
+        <h4>Project two</h4>
       </div>
       <div class="project">
-        <img class="work__image" src="http://placehold.it/400x300">
-        <h4>Project 3</h4>
+        <img class="work__image" src="http://placehold.it/400x300" alt="Project 3 Image" data-toggle="modal" data-target="#Project3">
+        <h4>Project three</h4>
       </div>
       </div>
     </div>
@@ -85,7 +88,7 @@
       </div>
       <div class="col12 scroll__arrow">
         <a class="to__top" href="#intro">
-          <p>To Top</p>
+          <p class="scroll__arrow">To Top</p>
           <img class="up__arrow" src="images/circle-up.svg">
         </a>
       </div>
@@ -94,11 +97,66 @@
 
   <footer class="row footer__arrow scroll__arrow">
     <div class="col12">
-      <a href="#work">
+      <a href="#about">
         <img class="down__arrow" src="images/circle-down.svg">
       </a>
     </div>
   </footer>
+
+<!-- Modals -->
+
+<!-- Projects -->
+
+  <div class="modal fade" id="Project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Project Uno</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="http://www.placehold.it/400x300" alt="Project Image One">
+          This will be my first noteworthy project. I will have used skills both new and familiar and learned a lot from this endeavor. It will have been a challenge, not without its compromises, but also with a few hard-earned victories. This piece will show off my talents and skills, and display a satisfying result.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">&#9747;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Project Dos</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="http://www.placehold.it/400x300" alt="Project Image Two">
+          What can I say about this project. It will have been a very dear enterprise of mine. I will have persevered and shown great attention to detail in completing it. All parties involved will have become ecstatic about the final product. It will also have been nominated for a web design award from my mother, for which I will have to thank her at the ceremony.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">&#9747;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Project Tres</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="http://www.placehold.it/400x300" alt="Project Image Three">
+          Lastly, my piece-de-resistance. This work will have to speak for itself, since by this point my readers will surely be losing interest. It will be the work that is appealing without being essential, safe without being boring, reflective without being representative.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">&#9747;</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 

@@ -55,7 +55,34 @@
 }
 
 
-/* Styles */
+/* Bootstrap overwrites */
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: #000;
+  text-decoration: none !important;
+}
+
+.modal-content {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.modal-title {
+  text-transform: uppercase;
+}
+
+.img-responsive {
+  margin: auto;
+}
+
+.modal-body {
+  font-size: 1.25em;
+}
+
+/* Intro Page */
 
 .intro {
   height: 100vh;
@@ -65,14 +92,6 @@
 .intro__header {
   text-align: center;
   margin: auto;
-}
-
-.intro__handle,
-.intro__handle:hover,
-.intro__handle:visited,
-.intro__handle:active {
-  color: #000;
-  text-decoration: none;
 }
 
 .intro__portfolio {
@@ -106,12 +125,6 @@
   text-decoration: none;
 }
 
-.intro__nav__item,
-.intro__nav__item:hover,
-.intro__nav__item:visited,
-.intro__nav__item:active {
-  color: #000;
-}
 
 .intro__nav__item:before {
   content: "";
@@ -134,6 +147,8 @@
   transform: scaleX(1);
 }
 
+/* Main */
+
 .about,
 .contact,
 .work {
@@ -149,8 +164,13 @@
   max-width: 750px;
 }
 
-.about__title,
-.contact__title {
+/* About Page */
+
+.about {
+  color: #FFF;
+}
+
+.about__title {
   font: 400 2em/1.5 "Quicksand", sans-serif;
   color: #FFF;
   border-bottom: 1px white solid;
@@ -162,14 +182,15 @@
   color: #FFF;
 }
 
-.about__text:nth-child(4) {
+.about__text:nth-child(5) {
   font-size: 1.5em;
   padding-bottom: 1.5em;
   border-bottom: 1px solid white;
 }
 
-
-.webcomic__link {
+.webcomic__link,
+.webcomic__link:active,
+.webcomic__link:visited {
   color: #BBB;
   text-decoration: none;
 }
@@ -178,6 +199,8 @@
   text-decoration: none;
   color: #FFF;
 }
+
+/* Work Page */
 
 .work {
   background-color: #FFF;
@@ -197,6 +220,11 @@
   width: 100%;
 }
 
+.work__image:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
 .project {
   font: 400 1.5em "Quicksand", sans-serif;
   text-transform: uppercase;
@@ -209,12 +237,20 @@
   opacity: 1;
 }
 
+.contact__title {
+  font: 400 2em/1.5 "Quicksand", sans-serif;
+  color: #FFF;
+  border-bottom: 1px white solid;
+}
+
 .contact__list {
   font: 400 1em/2 "Quicksand", sans-serif;
   color: white;
   list-style: none;
   display: inline;
 }
+
+/* Footer */
 
 .visible {
   display: block;
@@ -245,7 +281,7 @@
 .scroll__arrow:active,
 .scroll__arrow:visited {
   text-decoration: none;
-  color: #000;
+  color: #FFF;
 }
 
 @-webkit-keyframes bounce {
@@ -329,13 +365,6 @@
 .to__top {
   font: 300 1em "Quicksand", sans-serif;
   color: #FFF;
-  text-decoration: none;
-}
-
-.to__top:hover,
-.to__top:visited,
-.to__top:active {
-  text-decoration: none;
 }
 
 /* Responsive */
@@ -351,6 +380,6 @@
 
 @media screen and (min-width: 750px) {
   .about__text {
-    font-size: 1.35em;
+    font-size: 1.25em;
   }
 }
