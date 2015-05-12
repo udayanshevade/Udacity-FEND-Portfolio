@@ -6,51 +6,51 @@
   flex-flow: row wrap;
 }
 
-.col1 {
+.col-1 {
   width: 8.33%;
 }
 
-.col2 {
+.col-2 {
   width: 16.66%;
 }
 
-.col3 {
+.col-3 {
   width: 25%;
 }
 
-.col4 {
+.col-4 {
   width: 8.33%;
 }
 
-.col5 {
+.col-5 {
   width: 8.33%;
 }
 
-.col6 {
+.col-6 {
   width: 50%;
 }
 
-.col7 {
+.col-7 {
   width: 58.33%;
 }
 
-.col8 {
+.col-8 {
   width: 66.66%;
 }
 
-.col9 {
+.col-9 {
   width: 75%;
 }
 
-.col10 {
+.col-10 {
   width: 83.33%;
 }
 
-.col11 {
+.col-11 {
   width: 91.66%;
 }
 
-.col12 {
+.col-12 {
   width: 100%;
 }
 
@@ -86,31 +86,31 @@ a:visited {
 
 .intro {
   height: 100vh;
-  background-color: #FFFFFC;
+  background-color: #fffffc;
 }
 
-.intro__header {
+.intro-header {
   text-align: center;
   margin: auto;
 }
 
-.intro__portfolio {
+.intro-portfolio {
   font: 400 1em "Quicksand", sans-serif;
   margin: auto;
 }
 
-.intro__name {
+.intro-name {
   font: 400 3em "Quicksand", sans-serif;
   text-transform: uppercase;
   margin: auto;
 }
 
-.intro__title {
+.intro-title {
   font: 300 2em "Quicksand", sans-serif;
   margin: 0 auto 2.5em auto;
 }
 
-.intro__nav {
+.intro-nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -118,7 +118,7 @@ a:visited {
   max-width: 700px;
 }
 
-.intro__nav__item {
+.intro-nav-item {
   font: 700 1.25em/2 "Quicksand", sans-serif;
   text-align: center;
   position: relative;
@@ -126,7 +126,7 @@ a:visited {
 }
 
 
-.intro__nav__item:before {
+.intro-nav-item:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -141,7 +141,7 @@ a:visited {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.intro__nav__item:hover:before {
+.intro-nav-item:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -157,7 +157,7 @@ a:visited {
   text-align: center;
 }
 
-.page__content {
+.page-content {
   top: 50%;
   margin: auto;
   width: 100%;
@@ -167,62 +167,53 @@ a:visited {
 /* About Page */
 
 .about {
-  color: #FFF;
+  color: #fff;
 }
 
-.about__title {
+.about-title {
   font: 400 2em/1.5 "Quicksand", sans-serif;
-  color: #FFF;
+  color: #fff;
   border-bottom: 1px white solid;
 }
 
-.about__text {
+.about-text {
   font: 400 1em/1.5 "Quicksand", sans-serif;
   text-transform: uppercase;
-  color: #FFF;
+  color: #fff;
 }
 
-.about__text:nth-child(5) {
+.about-text:nth-child(5) {
   font-size: 1.5em;
   padding-bottom: 1.5em;
   border-bottom: 1px solid white;
 }
 
-.webcomic__link,
-.webcomic__link:active,
-.webcomic__link:visited {
-  color: #BBB;
+.webcomic-link,
+.webcomic-link:active,
+.webcomic-link:visited {
+  color: #bbb;
   text-decoration: none;
 }
 
-.webcomic__link:hover {
+.webcomic-link:hover {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
 }
 
 /* Work Page */
 
 .work {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
-.work__title {
+.work-title {
   font: 400 2em "Quicksand", sans-serif;
 }
 
-.work__gallery {
+.work-gallery {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-}
-
-.work__image {
-  width: 100%;
-}
-
-.work__image:hover {
-  cursor: pointer;
-  cursor: hand;
 }
 
 .project {
@@ -237,20 +228,15 @@ a:visited {
   opacity: 1;
 }
 
-.contact__title {
-  font: 400 2em/1.5 "Quicksand", sans-serif;
-  color: #FFF;
-  border-bottom: 1px white solid;
+.work-image {
+  width: 100%;
 }
 
-.contact__list {
-  font: 400 1em/2 "Quicksand", sans-serif;
-  color: white;
-  list-style: none;
-  display: inline;
+.work-image:hover {
+  cursor: pointer;
 }
 
-/* Footer */
+/* Arrows */
 
 .visible {
   display: block;
@@ -260,7 +246,7 @@ a:visited {
   display: none;
 }
 
-.footer__arrow {
+.footer-arrow {
   position: fixed;
   bottom: 0;
   margin-top: 92vh;
@@ -268,7 +254,7 @@ a:visited {
   width: 50px;
 }
 
-.scroll__arrow {
+.scroll-arrow {
   left: 45%;
   -webkit-animation:bounce 1.5s infinite;
   -moz-animation: bounce 1.5s infinite;
@@ -276,72 +262,183 @@ a:visited {
   animation: bounce 1.5s infinite;
 }
 
-.scroll__arrow,
-.scroll__arrow:hover,
-.scroll__arrow:active,
-.scroll__arrow:visited {
+.scroll-arrow,
+.scroll-arrow:hover,
+.scroll-arrow:active,
+.scroll-arrow:visited {
   text-decoration: none;
   color: #FFF;
 }
 
 @-webkit-keyframes bounce {
-  0% { top: 0;}
-  10% { top: 2px; }
-  10% { top: 4px; }
-  20% { top: 6px; }
-  30% { top: 8px; }
-  40% { top: 10px; }
-  50% { top: 10px; }
-  60% { top: 8px; }
-  70% { top: 6px; }
-  80% { top: 4px; }
-  90% { top: 2px; }
-  100% { top: 0; }
+  0% {
+    top: 0;
+  }
+  10% {
+    top: 2px;
+  }
+  10% {
+    top: 4px;
+  }
+  20% {
+    top: 6px;
+  }
+  30% {
+    top: 8px;
+  }
+  40% {
+    top: 10px
+     }
+  50% {
+    top: 10px
+     }
+  60% {
+    top: 8px;
+  }
+  70% {
+    top: 6px;
+  }
+  80% {
+    top: 4px;
+  }
+  90% {
+    top: 2px;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 @-moz-keyframes bounce {
-  0% { top: 0;}
-  10% { top: 2px; }
-  10% { top: 4px; }
-  20% { top: 6px; }
-  30% { top: 8px; }
-  40% { top: 10px; }
-  50% { top: 10px; }
-  60% { top: 8px; }
-  70% { top: 6px; }
-  80% { top: 4px; }
-  90% { top: 2px; }
-  100% { top: 0; }
+  0% {
+    top: 0;
+  }
+  10% {
+    top: 2px;
+  }
+  10% {
+    top: 4px;
+  }
+  20% {
+    top: 6px;
+  }
+  30% {
+    top: 8px;
+  }
+  40% {
+    top: 10px
+     }
+  50% {
+    top: 10px
+     }
+  60% {
+    top: 8px;
+  }
+  70% {
+    top: 6px;
+  }
+  80% {
+    top: 4px;
+  }
+  90% {
+    top: 2px;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 @-o-keyframes bounce {
-  0% { top: 0;}
-  10% { top: 2px; }
-  10% { top: 4px; }
-  20% { top: 6px; }
-  30% { top: 8px; }
-  40% { top: 10px; }
-  50% { top: 10px; }
-  60% { top: 8px; }
-  70% { top: 6px; }
-  80% { top: 4px; }
-  90% { top: 2px; }
-  100% { top: 0; }
+  0% {
+    top: 0;
+  }
+  10% {
+    top: 2px;
+  }
+  10% {
+    top: 4px;
+  }
+  20% {
+    top: 6px;
+  }
+  30% {
+    top: 8px;
+  }
+  40% {
+    top: 10px
+     }
+  50% {
+    top: 10px
+     }
+  60% {
+    top: 8px;
+  }
+  70% {
+    top: 6px;
+  }
+  80% {
+    top: 4px;
+  }
+  90% {
+    top: 2px;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 @keyframes bounce {
-  0% { top: 0;}
-  10% { top: 2px; }
-  10% { top: 4px; }
-  20% { top: 6px; }
-  30% { top: 8px; }
-  40% { top: 10px; }
-  50% { top: 10px; }
-  60% { top: 8px; }
-  70% { top: 6px; }
-  80% { top: 4px; }
-  90% { top: 2px; }
-  100% { top: 0; }
+  0% {
+    top: 0;
+  }
+  10% {
+    top: 2px;
+  }
+  10% {
+    top: 4px;
+  }
+  20% {
+    top: 6px;
+  }
+  30% {
+    top: 8px;
+  }
+  40% {
+    top: 10px
+     }
+  50% {
+    top: 10px
+     }
+  60% {
+    top: 8px;
+  }
+  70% {
+    top: 6px;
+  }
+  80% {
+    top: 4px;
+  }
+  90% {
+    top: 2px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+/* Contact Page */
+
+.contact-title {
+  font: 400 2em/1.5 "Quicksand", sans-serif;
+  color: #fff;
+  border-bottom: 1px white solid;
+}
+
+.contact-list {
+  font: 400 1em/2 "Quicksand", sans-serif;
+  color: white;
+  list-style: none;
+  display: inline;
 }
 
 .email,
@@ -359,12 +456,12 @@ a:visited {
   color: #FFF;
 }
 
-.contact__greeting {
+.contact-greeting {
   font: 400 1.5em/1.5 "Quicksand", sans-serif;
   color: #FFF;
 }
 
-.to__top {
+.to-top {
   font: 300 1em "Quicksand", sans-serif;
   color: #FFF;
 }
@@ -372,16 +469,16 @@ a:visited {
 /* Responsive */
 
 @media screen and (min-width: 500px) {
-  .about__text {
+  .about-text {
     font-size: 1em;
   }
-  .scroll__arrow {
+  .scroll-arrow {
     left: 48%;
   }
 }
 
 @media screen and (min-width: 750px) {
-  .about__text {
+  .about-text {
     font-size: 1.25em;
   }
 }
