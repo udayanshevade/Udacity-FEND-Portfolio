@@ -21,7 +21,7 @@ a:visited {
 }
 
 .modal-content {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
 }
 
@@ -67,18 +67,18 @@ a:visited {
 }
 
 .intro-portfolio {
-  font: 400 1em "Quicksand", sans-serif;
+  font: 400 1em "Open Sans", sans-serif;
   margin: auto;
 }
 
 .intro-name {
-  font: 400 3em "Quicksand", sans-serif;
+  font: 400 3em "Open Sans", sans-serif;
   text-transform: uppercase;
   margin: auto;
 }
 
 .intro-title {
-  font: 300 2em "Quicksand", sans-serif;
+  font: 300 2em "Open Sans", sans-serif;
   margin: 0 auto 2.5em auto;
 }
 
@@ -90,7 +90,7 @@ a:visited {
 }
 
 .intro-nav-item {
-  font: 700 1.25em/2 "Quicksand", sans-serif;
+  font: 700 1.25em/2 "Open Sans", sans-serif;
   text-align: center;
   position: relative;
   text-decoration: none;
@@ -134,7 +134,7 @@ a:visited {
 }
 
 .title {
-  font: 400 2em/1.5 "Quicksand", sans-serif;
+  font: 400 2em/1.5 "Open Sans", sans-serif;
   border-bottom: 1px black solid;
 }
 
@@ -151,7 +151,7 @@ a:visited {
 }
 
 .about-text {
-  font: 400 1em/1.5 "Quicksand", sans-serif;
+  font: 400 1em/1.5 "Open Sans", sans-serif;
   text-transform: uppercase;
   color: #fff;
 }
@@ -195,7 +195,7 @@ a:visited {
 }
 
 .project {
-  font: 400 1.5em "Quicksand", sans-serif;
+  font: 400 1.5em "Open Sans", sans-serif;
   text-transform: uppercase;
   margin: 1em auto;
   opacity: 0.4;
@@ -406,34 +406,27 @@ a:visited {
 /* Contact Page */
 
 .contact-list {
-  font: 400 1em/2 "Quicksand", sans-serif;
+  font: 400 1em/2 "Open Sans", sans-serif;
   color: white;
   list-style: none;
   display: inline;
 }
 
-.email,
-.email:hover,
-.email:visited,
-.email:active,
-.github,
-.github:hover,
-.github:visited,
-.github:active,
-.facebook,
-.facebook:hover,
-.facebook:visited,
-.facebook:active {
+.link,
+.link:focus,
+.link:hover,
+.link:visited,
+.link:active {
   color: #fff;
 }
 
 .contact-greeting {
-  font: 400 1.5em/1.5 "Quicksand", sans-serif;
+  font: 400 1.5em/1.5 "Open Sans", sans-serif;
   color: #fff;
 }
 
 .to-top {
-  font: 300 1em "Quicksand", sans-serif;
+  font: 300 1em "Open Sans", sans-serif;
   color: #fff;
 }
 

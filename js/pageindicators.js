@@ -7,6 +7,10 @@ $(window).scroll(function(event){
   didScroll = true;
 });
 
+$(window).on('load', function() {
+  downArrowToggle();
+});
+
 // run hasScrolled if didScroll is true
 setInterval(function(){
   if (didScroll){
@@ -24,17 +28,14 @@ function downArrowToggle(){
   }
 
   if (scrolled < 80) {
-    $("footer").removeClass("invisible").addClass("visible");
+    $("footer").removeClass("invisible");
   }
 
   else if (scrolled > lastScrollTop) {
     // scrolling down
-    $("footer").removeClass("visible").addClass("invisible");
+    $("footer").addClass("invisible");
   }
 
-  else {
-    //scrolling up
-  }
   lastScrollTop = scrolled;
 }
 

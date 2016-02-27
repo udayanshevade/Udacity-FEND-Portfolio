@@ -4,32 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Portfolio</title>
-    <style>
-    /* latin */
-      @font-face {
-        font-family: 'Quicksand';
-        font-style: normal;
-        font-weight: 300;
-        src: local('Quicksand Light'), local('Quicksand-Light'), url(http://fonts.gstatic.com/s/quicksand/v5/qhfoJiLu10kFjChCCTvGlOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-      }
-      /* latin */
-      @font-face {
-        font-family: 'Quicksand';
-        font-style: normal;
-        font-weight: 400;
-        src: local('Quicksand Regular'), local('Quicksand-Regular'), url(http://fonts.gstatic.com/s/quicksand/v5/sKd0EMYPAh5PYCRKSryvW1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-      }
-      /* latin */
-      @font-face {
-        font-family: 'Quicksand';
-        font-style: normal;
-        font-weight: 700;
-        src: local('Quicksand Bold'), local('Quicksand-Bold'), url(http://fonts.gstatic.com/s/quicksand/v5/32nyIRHyCu6iqEka_hbKsugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-      }
-    </style>
     <link rel="stylesheet" href="css/main.css">
   </head>
 
@@ -117,13 +91,13 @@
             <div class="page-content">
               <h3 class="title white-title">contact</h3>
               <ul class="contact-list">
-                <li><a class="email" href="mailto:udayan.shevade@gmail.com" target="_top">udayan.shevade@gmail.com</a></li>
-                <li><a class="github" href="http://www.github.com/udayanshevade">github.com/udayanshevade</a></li>
-                <li><a class="facebook" href="http://www.facebook.com/danshevade">facebook.com/danshevade</a></li>
+                <li><a class="link email" href="mailto:udayan.shevade@gmail.com" target="_top">udayan.shevade@gmail.com</a></li>
+                <li><a class="link github" href="http://www.github.com/udayanshevade">github.com/udayanshevade</a></li>
+                <li><a class="link facebook" href="http://www.facebook.com/danshevade">facebook.com/danshevade</a></li>
               </ul>
               <p class="contact-greeting">say hello!</p>
 
-              <a class="to-top" href="#intro-page">
+              <a class="link to-top" href="#intro-page">
                 <p>To Top</p>
                 <img class="to-top-arrow scroll-arrow" src="img/circle-up.svg" alt="Up Arrow">
               </a>
@@ -219,7 +193,9 @@
       var cb = function() {
         var l = document.createElement('link'); l.rel = 'stylesheet';
         l.href = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
-        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+        var m = document.createElement('link'); m.rel = 'stylesheet';
+        m.href = 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,700';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h); h.parentNode.insertBefore(m, h);
       };
       var raf = requestAnimationFrame || mozRequestAnimationFrame ||
         webkitRequestAnimationFrame || msRequestAnimationFrame;
