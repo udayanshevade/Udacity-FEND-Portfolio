@@ -4,176 +4,231 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+    /* latin */
+      @font-face {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Quicksand Light'), local('Quicksand-Light'), url(http://fonts.gstatic.com/s/quicksand/v5/qhfoJiLu10kFjChCCTvGlOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Quicksand Regular'), local('Quicksand-Regular'), url(http://fonts.gstatic.com/s/quicksand/v5/sKd0EMYPAh5PYCRKSryvW1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Quicksand Bold'), local('Quicksand-Bold'), url(http://fonts.gstatic.com/s/quicksand/v5/32nyIRHyCu6iqEka_hbKsugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+      }
+    </style>
     <link rel="stylesheet" href="css/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/pageindicators.js"></script>
   </head>
 
   <body>
 
-    <a id="intro-page"></a>
-    <div class="row intro">
-      <div class="col-12 intro-header">
-        <img class="intro-pic" src="http://placehold.it/125x125" alt="Intro Image" data-toggle="modal" data-target="#Thanks">
-        <a href="" class="intro-handle">
-          <h3 class="intro-portfolio">Portfolio of</h3>
-          <h1 class="intro-name">Udayan Shevade</h1>
-          <h2 class="intro-title">front end padawan</h2>
-        </a>
+    <div class="container">
 
-        <nav class="intro-nav">
-          <a class="intro-nav-item underline-animation" href="#about-page">about</a>
-          <a class="intro-nav-item underline-animation" href="#work-page">work</a>
-          <a class="intro-nav-item underline-animation" href="#contact-page">contact</a>
-        </nav>
-      </div>
-    </div>
+      <a id="intro-page"></a>
 
-
-    <div class="row about">
-      <div class="col-12 page-content">
-        <a id="about-page">
-          <h3 class="about-title">about</h3>
-        </a>
-        <p class="about-text">
-          Udayan is a Carbon-based, aspiring front-end web developer, who dabbles in standup and writing. You may have heard of a little novel called "The Stranger." Well he didn't write that, Camus did. But it's fantastic and he's read it. His hope is to write a published story soon, and make people laugh.
-        </p>
-        <p class="about-text">
-          He (Udayan, not Camus) has a degree in Biology and enjoys all things scientific. Darwin is his patron saint. He updates a webcomic <a class="webcomic-link" href="http://www.allthingsalike.com">here</a> as often as he can, which draws from his experiences and reflections.
-        </p>
-        <p class="about-text">
-          Udayan is currently enrolled in life and loves to learn.
-        </p>
-        <p class="about-text">
-          Look on his works, ye Mighty, and despair. Or, just kind of go "heh, nice."
-        </p>
-      </div>
-    </div>
-
-    <a id="work-page">
-      <div class="row work">
-        <div class="col-12 page-content">
-          <h3 class="work-title">work (working on that)</h3>
-        </div>
-        <div class="col-12 work-gallery">
-          <div class="project">
-            <img class="work-image" src="http://placehold.it/400x300" alt="Project 1 Image" data-toggle="modal" data-target="#Project1">
-            <h4>Project one</h4>
-          </div>
-          <div class="project">
-            <img class="work-image" src="http://placehold.it/400x300" alt="Project 2 Image" data-toggle="modal" data-target="#Project2">
-            <h4>Project two</h4>
-          </div>
-          <div class="project">
-            <img class="work-image" src="http://placehold.it/400x300" alt="Project 3 Image" data-toggle="modal" data-target="#Project3">
-            <h4>Project three</h4>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="flex-content section">
+            <div class="intro">
+              <header class="intro-header">
+                <img class="intro-pic" src="http://placehold.it/125x125" alt="Intro Image" data-toggle="modal" data-target="#Thanks">
+                <a href="" class="intro-handle">
+                  <h3 class="intro-portfolio">Portfolio of</h3>
+                  <h1 class="intro-name">Udayan Shevade</h1>
+                  <h2 class="intro-title">front end padawan</h2>
+                </a>
+              </header>
+              <nav class="intro-nav flex-content">
+                <a class="intro-nav-item underline-animation" href="#about-page">about</a>
+                <a class="intro-nav-item underline-animation" href="#work-page">work</a>
+                <a class="intro-nav-item underline-animation" href="#contact-page">contact</a>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
-    </a>
 
-    <div class="row contact">
-      <div class="col-12 page-content">
-        <a id="contact-page">
-          <h3 class="contact-title">contact</h3>
-        </a>
-        <ul class="contact-list">
-          <li><a class="email" href="mailto:udayan.shevade@gmail.com" target="_top">udayan.shevade@gmail.com</a></li>
-          <li><a class="github" href="http://www.github.com/udayanshevade">github.com/udayanshevade</a></li>
-          <li><a class="facebook" href="http://www.facebook.com/danshevade">facebook.com/danshevade</a></li>
-        </ul>
-        <p class="contact-greeting">say hello!</p>
-      </div>
-      <div class="col-12 scroll-arrow">
-        <a class="to-top" href="#intro-page">
-          <p class="scroll-arrow">To Top</p>
-          <img class="up-arrow" src="img/circle-up.svg" alt="Up Arrow">
-        </a>
-      </div>
-    </div>
 
-    <footer class="row footer-arrow scroll-arrow">
-      <div class="col-12">
-        <a href="#about-page">
-          <img class="down-arrow" src="img/circle-down.svg" alt="Down Arrow">
-        </a>
-      </div>
-    </footer>
-
-  <!-- Modals -->
-
-    <div class="modal fade" id="Thanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Thank You</h4>
+      <section class="row">
+        <div class="col-xs-12">
+          <a id="about-page"></a>
+          <div class="flex-content section about">
+            <div class="page-content">
+              <h3 class="about-title">about</h3>
+              <p class="about-text">
+                Udayan is a Carbon-based, aspiring front-end web developer, who dabbles in standup and writing. You may have heard of a little novel called "The Stranger." Well he didn't write that, Camus did. But it's fantastic and he's read it. His hope is to write a published story soon.
+              </p>
+              <p class="about-text">
+                He (Udayan, not Camus) has a degree in Biology and enjoys all things scientific. Darwin is his patron saint. He updates a webcomic <a class="webcomic-link" href="http://www.allthingsalike.com">here</a> as often as he can.
+              </p>
+              <p class="about-text">
+                Udayan is currently enrolled in life and loves to learn.
+              </p>
+              <p class="about-text">
+                Look on his works, ye Mighty, and despair. Or, just go "heh, nice."
+              </p>
+            </div>
           </div>
-          <div class="modal-body">
-            Thank you for taking the time to look at my work. I appreciate the honest and helpful feedback. It will only help me improve.
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="col-xs-12">
+          <a id="work-page"></a>
+          <div class="flex-content section work">
+            <div class="page-content work-content">
+              <h3 class="work-title">work (working on that)</h3>
+              <div class="col-xs-12 work-gallery">
+                <div class="project">
+                  <img class="work-image" src="http://placehold.it/400x300" alt="Project 1 Image" data-toggle="modal" data-target="#Project1">
+                  <h4>Project one</h4>
+                </div>
+                <div class="project">
+                  <img class="work-image" src="http://placehold.it/400x300" alt="Project 2 Image" data-toggle="modal" data-target="#Project2">
+                  <h4>Project two</h4>
+                </div>
+                <div class="project">
+                  <img class="work-image" src="http://placehold.it/400x300" alt="Project 3 Image" data-toggle="modal" data-target="#Project3">
+                  <h4>Project three</h4>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">☓</button>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="col-xs-12">
+          <a id="contact-page"></a>
+          <div class="flex-content section contact">
+            <div class="page-content">
+              <h3 class="contact-title">contact</h3>
+              <ul class="contact-list">
+                <li><a class="email" href="mailto:udayan.shevade@gmail.com" target="_top">udayan.shevade@gmail.com</a></li>
+                <li><a class="github" href="http://www.github.com/udayanshevade">github.com/udayanshevade</a></li>
+                <li><a class="facebook" href="http://www.facebook.com/danshevade">facebook.com/danshevade</a></li>
+              </ul>
+              <p class="contact-greeting">say hello!</p>
+
+              <a class="to-top" href="#intro-page">
+                <p class="scroll-arrow">To Top</p>
+                <img class="up-arrow" src="img/circle-up.svg" alt="Up Arrow">
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="row ">
+        <div class="col-xs-12">
+          <div class="footer-arrow scroll-arrow">
+            <a href="#about-page">
+              <img class="down-arrow" src="img/circle-down.svg" alt="Down Arrow">
+            </a>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Modals -->
+
+      <div class="modal fade" id="Thanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Thank You</h4>
+            </div>
+            <div class="modal-body">
+              Thank you for taking the time to look at my work. I appreciate the honest and helpful feedback. It will only help me improve.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">☓</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Projects -->
+
+      <div class="modal fade" id="Project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Project Uno</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" src="http://www.placehold.it/400x300" alt="Project Image One">
+              This will have been my first noteworthy project. I will have used skills both new and familiar and learned a lot from this endeavor. It will have been a challenge, not without its compromises, but also with a few hard-earned victories. This piece will show off my talents and skills, and display a satisfying result.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">☓</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="Project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Project Dos</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" src="http://www.placehold.it/400x300" alt="Project Image Two">
+              What can I say about this project. It will have been a very dear enterprise of mine. I will have persevered and shown great attention to detail in completing it. All parties involved will have been overjoyed with the final product. It will also have been nominated for a web design award by my mother, for which I will have to thank her at dinner.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">☓</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="Project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Project Tres</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" src="http://www.placehold.it/400x300" alt="Project Image Three">
+              Lastly, my piece-de-resistance. This work will have to speak for itself, since by this point my readers will surely be losing interest. It will be the work that is appealing without being essential, safe without being boring, reflective without being representative.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">☓</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-  <!-- Projects -->
-
-    <div class="modal fade" id="Project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Project Uno</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="http://www.placehold.it/400x300" alt="Project Image One">
-            This will have been my first noteworthy project. I will have used skills both new and familiar and learned a lot from this endeavor. It will have been a challenge, not without its compromises, but also with a few hard-earned victories. This piece will show off my talents and skills, and display a satisfying result.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">☓</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="Project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Project Dos</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="http://www.placehold.it/400x300" alt="Project Image Two">
-            What can I say about this project. It will have been a very dear enterprise of mine. I will have persevered and shown great attention to detail in completing it. All parties involved will have been overjoyed with the final product. It will also have been nominated for a web design award by my mother, for which I will have to thank her at dinner.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">☓</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="Project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Project Tres</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="http://www.placehold.it/400x300" alt="Project Image Three">
-            Lastly, my piece-de-resistance. This work will have to speak for itself, since by this point my readers will surely be losing interest. It will be the work that is appealing without being essential, safe without being boring, reflective without being representative.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">☓</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script async src="js/pageindicators.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 
 </html>
